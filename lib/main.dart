@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:online_flower_shop/homePage.dart';
+import 'package:online_flower_shop/View/homePage.dart';
 import 'package:online_flower_shop/Styles/Themes/themes.dart';
 
 void main() {
+  init();
   runApp(const MyApp());
 }
 
@@ -21,4 +23,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
     );
   }
+}
+
+init() {
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
 }
