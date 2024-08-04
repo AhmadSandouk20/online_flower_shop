@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
 import 'package:online_flower_shop/Conrtoller/LogControllers/loginController.dart';
-import 'package:online_flower_shop/Styles/Colors/colors.dart';
+import 'package:online_flower_shop/Styles/colors.dart';
 import 'logScreens.dart/widgets/loginWidgets.dart';
 
 class LoginScreen extends StatelessWidget {

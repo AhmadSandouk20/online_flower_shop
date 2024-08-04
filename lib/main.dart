@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:online_flower_shop/Bindings/logBindings.dart';
 import 'package:online_flower_shop/Middlewares/shopMiddleware.dart';
 import 'package:online_flower_shop/View/homePage.dart';
-import 'package:online_flower_shop/Styles/Themes/themes.dart';
+import 'package:online_flower_shop/Styles/themes.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

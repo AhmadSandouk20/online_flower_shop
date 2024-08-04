@@ -8,10 +8,10 @@ Widget logTextField(
     required controller,
     required Size screenSize}) {
   return Container(
-    margin: EdgeInsets.symmetric(
-      vertical: (screenSize.height / 6).toDouble(),
-      horizontal: (screenSize.height / 6).toDouble(),
-    ),
+    // margin: EdgeInsets.symmetric(
+    //   vertical: (screenSize.height / 6).toDouble(),
+    //   horizontal: (screenSize.height / 6).toDouble(),
+    // ),
     child: TextField(
       decoration: InputDecoration(
         contentPadding: EdgeInsets.symmetric(
