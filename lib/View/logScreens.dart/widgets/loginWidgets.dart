@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 Widget logTextField(
     {required label,
@@ -6,15 +7,18 @@ Widget logTextField(
     keyboardType,
     isObscure,
     required controller,
-    required ctx}) {
-  return LayoutBuilder(
-    builder: (ctx, constranints) => TextField(
+    required Size screenSize}) {
+  return Container(
+    margin: EdgeInsets.symmetric(
+      vertical: (screenSize.height / 52).toDouble(),
+      horizontal: (screenSize.height / 20).toDouble(),
+    ),
+    child: TextField(
       decoration: InputDecoration(
         contentPadding: EdgeInsets.symmetric(
-          vertical: constranints.maxHeight / 6,
-          horizontal: constranints.maxHeight / 6,
+          vertical: (screenSize.height / 50).toDouble(),
+          horizontal: (screenSize.height / 50).toDouble(),
         ),
-        filled: true,
         label: Text(label),
         errorStyle: const TextStyle(
           color: Color(
@@ -23,7 +27,6 @@ Widget logTextField(
         ),
         errorText: errorMessage,
         border: OutlineInputBorder(
-          borderSide: BorderSide.none,
           borderRadius: BorderRadius.circular(
             7,
           ),
