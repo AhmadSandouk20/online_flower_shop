@@ -14,6 +14,7 @@ class LoginScreen extends StatelessWidget {
     Size screenSize = MediaQuery.of(context).size;
     LoginController loginController = Get.find<LoginController>();
     return Scaffold(
+      backgroundColor: Color(0xE6F6F6FF),
       body: Column(
         children: [
           Expanded(
@@ -21,9 +22,9 @@ class LoginScreen extends StatelessWidget {
             child: Stack(
               alignment: Alignment.topRight,
               children: [
-                Positioned(
-                  left: 80,
-                  top: 200,
+                const Positioned(
+                  left: 50,
+                  top: 150,
                   child: Text(
                     "Logo",
                     style: TextStyle(
@@ -53,30 +54,30 @@ class LoginScreen extends StatelessWidget {
             ),
           ),
           Expanded(
-            flex: 4,
+            flex: 5,
             child: Column(
               children: [
                 logTextField(
                   label: "Email",
                   controller: loginController.emailController,
-                  screenSize: screenSize,
+                  ctx: context,
                 ),
                 logTextField(
                   label: "Phone Number",
                   controller: loginController.phoneNumberController,
-                  screenSize: screenSize,
+                  ctx: context,
                   keyboardType: TextInputType.number,
                 ),
                 logTextField(
                   label: "Password",
                   controller: loginController.passwordController,
-                  screenSize: screenSize,
+                  ctx: context,
                 ),
               ],
             ),
           ),
           Expanded(
-            flex: 3,
+            flex: 2,
             child: Stack(
               alignment: Alignment.bottomLeft,
               children: [
@@ -84,6 +85,7 @@ class LoginScreen extends StatelessWidget {
                   left: 0,
                   child: Image.asset(
                     loginController.ellipse1,
+                    color: pinkBg,
                   ),
                 ),
                 Positioned(

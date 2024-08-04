@@ -6,17 +6,13 @@ Widget logTextField(
     keyboardType,
     isObscure,
     required controller,
-    required Size screenSize}) {
-  return Container(
-    // margin: EdgeInsets.symmetric(
-    //   vertical: (screenSize.height / 6).toDouble(),
-    //   horizontal: (screenSize.height / 6).toDouble(),
-    // ),
-    child: TextField(
+    required ctx}) {
+  return LayoutBuilder(
+    builder: (ctx, constranints) => TextField(
       decoration: InputDecoration(
         contentPadding: EdgeInsets.symmetric(
-          vertical: (screenSize.height / 6).toDouble(),
-          horizontal: (screenSize.height / 6).toDouble(),
+          vertical: constranints.maxHeight / 6,
+          horizontal: constranints.maxHeight / 6,
         ),
         filled: true,
         label: Text(label),
