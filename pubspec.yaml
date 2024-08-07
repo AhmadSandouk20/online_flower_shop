@@ -28,6 +28,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  flutter_screenutil: ^5.9.3
   cupertino_icons: ^1.0.6
   device_preview: ^1.2.0
   flutter:
@@ -51,10 +52,10 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/Ellipse_2.png
-    - assets/images/Ellipse_1.png
-    - assets/images/download__4.png
-    - assets/images/Bunch_Orchid_with_Lila_Wall_Decal_1.png
+    - assets/images/Login/Ellipse_2.png
+    - assets/images/Login/Ellipse_1.png
+    - assets/images/Login/download__4.png
+    - assets/images/Login/Bunch_Orchid_with_Lila_Wall_Decal_1.png
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -69,10 +70,14 @@ flutter:
     - family: Roboto
       fonts:
         - asset: assets/fonts/Roboto-Regular.ttf
+
+    - family: MyFlutterApp
+      fonts:
+        - asset: assets/fonts/MyFlutterApp.ttf
+
     - family: Montserrat
       fonts:
         - asset: assets/fonts/Montserrat-ExtraBold.ttf
           weight: 800
-  #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

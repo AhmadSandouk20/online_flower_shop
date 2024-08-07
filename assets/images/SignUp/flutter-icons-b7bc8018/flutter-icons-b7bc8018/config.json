@@ -1,0 +1,30 @@
+{
+  "name": "",
+  "css_prefix_text": "",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "4d19a43c50cd460fb71ebe0678af4694",
+      "css": "insert_drive_file",
+      "code": 59392,
+      "src": "material"
+    },
+    {
+      "uid": "445b4762e88b59b7c5dc8e1bf03371f7",
+      "css": "pdf-file-1",
+      "code": 59392,
+      "src": "custom_icons",
+      "selected": false,
+      "svg": {
+        "path": "",
+        "width": 1000
+      },
+      "search": [
+        "pdf-file-1"
+      ]
+    }
+  ]
+}
